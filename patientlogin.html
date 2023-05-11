@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Patient Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="loginpage.css">
+</head>
+
+<body>
+    <div _ngcontent-c1="" class="row bg-image" style="background-image: url('i10.png'); height: fit-content;">
+
+        <div _ngcontent-c1="" class="col-md-5 col-sm-5 col-12 logo-center"><img _ngcontent-c1="" class="img-fluid py-3"
+                src="I2.png" width="100" height="100" title="MoHFW Logo"> &nbsp; <img _ngcontent-c1=""
+                class="img-fluid py-3 ml-4" src="i1.png" width="100" height="100" title="G20 Logo"></div>
+        <div _ngcontent-c1="" class="col-md-7 col-sm-7 col-12  logo-center">
+            <p _ngcontent-c1="" class="heading_title text-right mt-5"
+                style="color: rgb(2, 225, 255); font-size: xx-large;">
+                <b><strong>MedAid Teleconsultation Services</strong></b>
+            </p>
+        </div>
+    </div>
+    <h1>রোগী<img src="i13.svg" width="40" height="40" class="card-img-top" alt="..."></h1>
+    <form action="">
+        <!-- Headings for the form -->
+        <div class="headingsContainer">
+            <h3>সাইন ইন করুন</h3>
+            <p>আপনার ইউসারনেম এবং পাসওয়ার্ড দিয়ে সাইন ইন করুন</p>
+        </div>
+
+        <!-- Main container for all inputs -->
+        <div class="mainContainer">
+            <!-- Username -->
+            <label for="username">ইউসারনেম</label>
+            <input type="text" placeholder="ইউসারনেম লিখুন" name="username" required>
+
+            <br><br>
+
+            <!-- Password -->
+            <label for="pswrd">পাসওয়ার্ড</label>
+            <input type="password" placeholder="পাসওয়ার্ড লিখুন" name="pswrd" required>
+
+            <!-- sub container for the checkbox and forgot password link -->
+            <div class="subcontainer">
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> মনে রাখুন
+                </label>
+                <p class="forgotpsd"> <a href="#">Forgot Password?</a></p>
+            </div>
+
+
+            <!-- Submit button -->
+            <a class="btn btn-primary" href="patientdashboard.html" role="button">Login</a>
+           <!-- <button type="submit" href="patientdashboard.html">Login</button>-->
+
+            <!-- Sign up link -->
+            <p class="register">Not a member?  <a href="#">Register here!</a></p>
+
+        </div>
+
+    </form>
+    <footer>
+        <div id="contact" class="d-flex flex-row justify-content-evenly py-4 flex-wrap align-items-start"
+            style="background-color: black; color: var(--invert-color);">
+            <div class="d-flex flex-column align-items-center px-3 justify-content-evenly my-3">
+                <p class="text-uppercase fs-5 fw-bold montserrat">Follow us</p>
+                <div></div><a href="#" class="fs-6 copyright my-1 text-center poppins">©MedAid
+                    All rights reserved</a><a class="fs-6 copyright"
+                    href="mailto:sbh@rcciit.org.in">medaid@gmail.com</a>
+            </div>
+            <div class="d-flex flex-column align-items-center px-3 my-3">
+                <p class="text-uppercase fs-5 fw-bold px-3 montserrat">Contact us</p>
+                <div class="d-flex footer-content">
+                    <div
+                        class="d-flex flex-column px-3 mb-3 flex-wrap align-items-center justify-content-evenly montserrat">
+                        <span>Dr. Anup Kolya</span><span style="font-weight: 200;"><a
+                                href="anupkumar.kolya@rcciit.org.in">anupkumar.kolya@rcciit.org.in</a></span>
+                    </div>
+                    <div
+                        class="d-flex flex-column px-3 mb-3 flex-wrap align-items-center justify-content-evenly montserrat">
+                        <span>Swastik Bhattacharya</span><span style="font-weight: 200;"><a
+                                href="mailto: swastikunity@gmail.com">swastikunity@gmail.com</a></span><span
+                            style="font-weight: 200;"><a href="tel:+919883861721">+919883861721</a></span>
+                    </div>
+                    <div
+                        class="d-flex flex-column px-3 mb-3 flex-wrap align-items-center justify-content-evenly montserrat">
+                        <span>Sagnik Datta</span><span style="font-weight: 200;"><a
+                                href="mailto:sagnikmis.datta@gmail.com">
+                                sagnikmis.datta@gmail.com</a></span><span style="font-weight: 200;"><a
+                                href="tel:+919547234545">+919547234545</a></span>
+                    </div>
+                    <div
+                        class="d-flex flex-column px-3 mb-3 flex-wrap align-items-center justify-content-evenly montserrat">
+                        <span>Swapnendu Banerjee</span><span style="font-weight: 200;"><a
+                                href="mailto:swaps.b003@gmail.com">swaps.b003@gmail.com</a></span><span
+                            style="font-weight: 200;"><a href="tel:+918345952856">+918345952856</a></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

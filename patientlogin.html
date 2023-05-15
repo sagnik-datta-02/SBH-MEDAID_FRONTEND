@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <script src="main.js"></script>
     <div _ngcontent-c1="" class="row bg-image" style="background-image: url('i10.png'); height: fit-content;">
 
         <div _ngcontent-c1="" class="col-md-5 col-sm-5 col-12 logo-center"><img _ngcontent-c1="" class="img-fluid py-3"
@@ -24,7 +25,7 @@
         </div>
     </div>
     <h1>রোগী<img src="i13.svg" width="40" height="40" class="card-img-top" alt="..."></h1>
-    <form action="">
+    <form action="patientdashboard.html" onsubmit="return valid()">
         <!-- Headings for the form -->
         <div class="headingsContainer">
             <h3>সাইন ইন করুন</h3>
@@ -35,13 +36,13 @@
         <div class="mainContainer">
             <!-- Username -->
             <label for="username">ইউসারনেম</label>
-            <input type="text" placeholder="ইউসারনেম লিখুন" name="username" required>
+            <input type="text" placeholder="ইউসারনেম লিখুন" id="usernamepa" required>
 
             <br><br>
 
             <!-- Password -->
             <label for="pswrd">পাসওয়ার্ড</label>
-            <input type="password" placeholder="পাসওয়ার্ড লিখুন" name="pswrd" required>
+            <input type="password" placeholder="পাসওয়ার্ড লিখুন" id="pswrdpa" required>
 
             <!-- sub container for the checkbox and forgot password link -->
             <div class="subcontainer">
@@ -53,7 +54,7 @@
 
 
             <!-- Submit button -->
-            <a class="btn btn-primary" href="patientdashboard.html" role="button">Login</a>
+            <input class="btn btn-primary" onclick="valid()" type="submit" value="Submit">
            <!-- <button type="submit" href="patientdashboard.html">Login</button>-->
 
             <!-- Sign up link -->
